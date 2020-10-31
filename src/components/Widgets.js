@@ -8,13 +8,7 @@ function Widgets() {
             <div className="widgets__input">
                 <SearchIcon className="widgets__searchIcon" />
                 <input placeholder="Search untwin" type="text"/>
-            </div>
-
-            <div className="widgets__widgetContainer">
-                <h2>What are the subjects? </h2>
-            </div>    
-
-    
+            </div> 
         </div>
     );
 }

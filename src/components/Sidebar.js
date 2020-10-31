@@ -9,10 +9,13 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
+import Logo from './Logo';
+import './component-styles/Sidebar.css'
 
 function Sidebar() {
     return (
         <div className="sidebar">
+            <Logo/>
             <SidebarOption active text = "Home" Icon={HomeIcon}/>
             <SidebarOption text = "Explore" Icon={SearchIcon}/>
             <SidebarOption text = "Notifications" Icon={NotificationsIcon}/>

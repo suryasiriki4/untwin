@@ -1,8 +1,9 @@
 .feed {
-    flex: 0.4;
+    flex: 3;
     border-right: 1px solid var(--untwin-background);
     min-width: fit-content;
     overflow-y: scroll;
+    padding: 0px 5px 5px 5px;
 }
 
 .feed::-webkit-scrollbar {
@@ -19,7 +20,6 @@
     top: 0;
     background-color: white;
     z-index: 100;
-    border: 1px solid var(--untwin-background);
     padding: 15px 20px;
 }
 

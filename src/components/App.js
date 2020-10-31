@@ -9,8 +9,6 @@ function App() {
   return (
     <div className="app">
 
-      <Logo/>
-
       {/* Side Bar*/}
       <Sidebar />
 
