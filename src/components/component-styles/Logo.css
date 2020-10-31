@@ -1,10 +1,13 @@
 .logo {
     color: var(--untwin-color);
-    float: right;
+    display: inline;
+}
+
+.div_logo{
+    margin: 10px 10px 10px 10px;
 }
 
 .untwinIcon {
     color: var(--untwin-color);
     font-size: 30px !important;
-    margin: 5px 10px;
 }

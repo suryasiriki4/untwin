@@ -1,6 +1,6 @@
 .doubtBox {
     padding-bottom: 10px;
-    border-bottom: 8px solid var(--untwin-background);
+    border-bottom: 3px solid var(--untwin-background);
     padding-right: 10px;
 }
 
