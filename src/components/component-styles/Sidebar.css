@@ -7,14 +7,6 @@
     padding-right: 20px;
 }
 
-.sidebar__untwinIcon {
-    color: var(--untwin-color);
-    font-size: 30px !important;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-
 .sidebar__doubt {
     background-color: var(--untwin-color) !important;
     border: none !important;

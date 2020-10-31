@@ -1,6 +1,4 @@
 import React from 'react';
-import './Sidebar.css';
-import UntiwnIcon from "@material-ui/icons/LocalLibrary";
 import SidebarOption from "./SidebarOption"
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -15,9 +13,6 @@ import { Button } from "@material-ui/core";
 function Sidebar() {
     return (
         <div className="sidebar">
-            { /* logo of app */}
-            <UntiwnIcon className="sidebar__untwinIcon"/>
-
             <SidebarOption active text = "Home" Icon={HomeIcon}/>
             <SidebarOption text = "Explore" Icon={SearchIcon}/>
             <SidebarOption text = "Notifications" Icon={NotificationsIcon}/>

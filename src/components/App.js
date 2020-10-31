@@ -1,13 +1,15 @@
 import React from "react";
-import './App.css';
+import './component-styles/App.css';
 import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Widgets from "./Widgets";
+import Logo from "./Logo";
 
 function App() {
   return (
     <div className="app">
-      <h1 className="app__logo"> UNTWIN </h1>
+
+      <Logo/>
 
       {/* Side Bar*/}
       <Sidebar />
