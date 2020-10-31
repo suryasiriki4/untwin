@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Feed.css";
+import "./component-styles/Feed.css";
 import DoubtBox from "./DoubtBox";
 import Post from "./Post";
 

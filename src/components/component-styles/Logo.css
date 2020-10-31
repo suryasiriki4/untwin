@@ -1,0 +1,10 @@
+.logo {
+    color: var(--untwin-color);
+    float: right;
+}
+
+.untwinIcon {
+    color: var(--untwin-color);
+    font-size: 30px !important;
+    margin: 5px 10px;
+}

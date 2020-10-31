@@ -3,10 +3,6 @@ body {
   --untwin-background: #F1F2F2;
 }
 
-.app__logo {
-  color: var(--untwin-color);
-}
-
 .app {
   display: flex;
   height: 100vh;
