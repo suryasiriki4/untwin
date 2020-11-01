@@ -1,0 +1,134 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#title {
+    background-color: #33aaa3;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.in {
+    text-decoration: white underline;
+}
+
+#features {
+    color: #33aaa3;
+    padding: 0% 5%;
+    text-align: center;
+    vertical-align: auto;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.enter-btn {
+    margin: 5% 3% 5% 0;
+}
+
+.title-img {
+    width: 110%;
+    position: absolute;
+    right: 0%;
+}
+
+.doubt-img {
+    width: 80%;
+}
+
+.issues-img {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.study-img {
+    width: 110%;
+    margin-top: 20%;
+}
+
+#features {
+    padding-top: 10%;
+    background-color: white;
+    color: #33aaa3;
+    padding-bottom: 5%;
+}
+
+#feature {
+    margin-top: 12%;
+}
+
+#featurepara {
+    font-size: 2rem;
+}
+
+@media (max-width: 1119px) {
+    #title {
+        text-align: center;
+    }
+    .title-img {
+        margin-top: 7%;
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+#footer {
+    text-align: center;
+    background-color: #33aaa3;
+}
+
+.footer-icon {
+    padding: 3% 1%;
+    color: white;
+}
+
+.footer-icon:hover {
+    color: black;
+}
+
+#footer-para {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 3%;
+}
