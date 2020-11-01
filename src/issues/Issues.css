@@ -1,0 +1,31 @@
+.issues__title {
+    background-color: var(--untwin-color);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+h1 {
+    color: white;
+}
+
+.issues {
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+}
+
+.issueCard__list {
+    flex: 0.4;
+    border-right: 1px solid var(--untwin-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.issueCard__list::-webkit-scrollbar {
+    display: none;
+}
+
+.issueCard__list {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
