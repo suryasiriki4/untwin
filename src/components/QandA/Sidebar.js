@@ -10,7 +10,7 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
 import Logo from './Logo';
-import './component-styles/Sidebar.css'
+import '../component-styles/Sidebar.css'
 
 function Sidebar() {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import UntiwnIcon from "@material-ui/icons/LocalLibrary";
-import "./component-styles/Logo.css"
+import "../component-styles/Logo.css"
 
 function Logo(){
     return (

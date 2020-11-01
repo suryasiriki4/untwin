@@ -3,7 +3,7 @@ body {
   --untwin-background: #F1F2F2;
 }
 
-.app {
+.q-and-a {
   display: flex;
   height: 100vh;
   max-width: 1300px;
