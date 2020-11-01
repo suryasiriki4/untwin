@@ -7,7 +7,7 @@ import Issues from './issues/Issues';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Issues />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
