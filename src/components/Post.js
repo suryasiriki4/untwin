@@ -19,9 +19,9 @@ function Post({
 }) {
     return (
         <div className="post">
-            <div className="post__avatar">
+            {/* <div className="post__avatar">
                 <Avatar src="https://kcballet.org/wp-content/uploads/2019/11/Olivia-Denson-240x300.jpg" />
-            </div>
+            </div> */}
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">

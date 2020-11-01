@@ -4,7 +4,7 @@ import "./component-styles/Logo.css"
 
 function Logo(){
     return (
-        <div>
+        <div className='div_logo'>
             <UntiwnIcon className="untwinIcon"/>    
             <h1 className="logo"> UNTWIN </h1>
         </div>

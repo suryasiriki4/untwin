@@ -2,6 +2,7 @@ import React from 'react';
 import "./component-styles/Feed.css";
 import DoubtBox from "./DoubtBox";
 import Post from "./Post";
+import './component-styles/Feed.css'
 
 function Feed() {
     return (

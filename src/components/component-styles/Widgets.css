@@ -1,5 +1,5 @@
 .widgets {
-    flex: 0.3;
+    flex: 1;
 }
 
 .widgets__input {
@@ -21,6 +21,7 @@
     color: gray;
 }
 
-.widgets__widgetContainer > h2 {
-    
-}
+/* .widgets__widgetContainer > h2 {
+    width: 100%;
+    margin-left: 10px;
+}    */
