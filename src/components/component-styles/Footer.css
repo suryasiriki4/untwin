@@ -1,0 +1,20 @@
+#footer {
+    text-align: center;
+    background-color: #33aaa3;
+}
+
+.footer-icon {
+    padding: 3% 1%;
+    color: white;
+}
+
+.footer-icon:hover {
+    color: black;
+}
+
+#footer-para {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 3%;
+}

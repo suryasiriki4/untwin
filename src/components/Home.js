@@ -29,8 +29,8 @@ function Home(){
 					<div class="col-lg-6">
 					<h1>Have a question?</h1>
 					<h2>Don't hesitate ask your friend.</h2>
-					<button type="button" class="btn btn-light btn-lg enter-btn"><i class="fa fa-sign-in" aria-hidden="true" href="\Login"></i> Login </button>
-					<button type="button" class="btn btn-outline-light btn-lg enter-btn"><i class="fa fa-user-circle" aria-hidden="true" href="\Register"></i> Register</button>
+					<a type="button" class="btn btn-light btn-lg enter-btn" href="/Login"><i class="fa fa-sign-in" aria-hidden="true" ></i> Login </a>
+					<a type="button" class="btn btn-outline-light btn-lg enter-btn" href="/Register"><i class="fa fa-user-circle" aria-hidden="true"></i> Register</a>
 					</div>
 					<div class="col-lg-6">
 					<img src={title} class="title-img"/>
@@ -46,7 +46,7 @@ function Home(){
 				</div>
 				<div class="col-lg-6" id="feature">
 					<h2>Post Something!</h2>
-					<p id="featurepara">Ask a question or share something with your friends</p>
+					<p id="featurepara">Ask a question or share something with your friends.</p>
 				</div>
 			</div>
 			

@@ -4,7 +4,7 @@ import Logo from "./Logo-white"
 
 function About() {
 	return (
-		<div class="body">
+		<div class="aboutbody">
 			<div id="titleabout">
 				<div class="container-fluid aboutcont">
 					<nav class="navbar navbar-expand-sm navbar-dark navabout">
