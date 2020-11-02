@@ -1,5 +1,5 @@
 import React from 'react'
-import "./component-styles/DoubtBox.css";
+import "../component-styles/DoubtBox.css";
 import { Avatar, Button } from "@material-ui/core";
 
 

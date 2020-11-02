@@ -1,11 +1,12 @@
+// eslint-disable-next-line
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import Post from './components/Post';
-import CommentPage from './components/CommentPage';
-import Issues from './issues/Issues';
+import Issues from './components/issues/Issues';
+
 
 ReactDOM.render(
   <React.StrictMode>

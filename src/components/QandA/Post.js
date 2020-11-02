@@ -1,13 +1,13 @@
 import { Avatar } from '@material-ui/core';
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import "./component-styles/Post.css";
+import "../component-styles/Post.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUserSharp";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 import { Button } from "@material-ui/core";
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import CommentPage from './CommentPage';
 
 function Post({

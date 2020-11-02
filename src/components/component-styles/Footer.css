@@ -1,0 +1,25 @@
+#footer {
+    text-align: center;
+    background-color: #33aaa3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-icon {
+    padding: 3% 1%;
+    color: white;
+}
+
+.footer-icon:hover {
+    color: black;
+}
+
+.cont {
+    padding: 3% 15%;
+}
+
+#footer-para {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 3%;
+}
