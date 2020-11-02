@@ -1,0 +1,20 @@
+#AboutBody {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+#head {
+    color: #33aaa3;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+#para {
+    text-align: justify;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.cont {
+	padding : 3% 15%;
+}

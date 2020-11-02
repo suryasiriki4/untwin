@@ -1,9 +1,9 @@
 import React from "react"
-import "./component-styles/About.css"
+import "./component-styles/Footer.css"
 
 function Footer() {
     return (
-        <div id="footer" class="container-fluid">
+        <div id="footer" class="container-fluid cont">
 
             <a href="https://twitter.com/" target="new-tab"><i class="fa fa-twitter footer-icon" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/" target="new-tab"><i class="fa fa-facebook footer-icon" aria-hidden="true"></i></a>

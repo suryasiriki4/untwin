@@ -5,8 +5,8 @@ import "./component-styles/Logo-white.css"
 function Logo(){
     return (
         <div className='div_logo'>
-            <UntiwnIcon className="untwinIcon"/>    
-            <h1 className="logo"> UnTwine </h1>
+            <UntiwnIcon className="untwinIconwhite"/>    
+            <h1 className="logowhite"> UnTwine </h1>
         </div>
     );
 }

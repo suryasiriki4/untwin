@@ -1,6 +1,7 @@
 #footer {
     text-align: center;
     background-color: #33aaa3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-icon {
@@ -10,6 +11,10 @@
 
 .footer-icon:hover {
     color: black;
+}
+
+.cont {
+    padding: 3% 15%;
 }
 
 #footer-para {
