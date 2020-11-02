@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import Post from './components/Post';
+import CommentPage from './components/CommentPage';
 import Issues from './issues/Issues';
 
 ReactDOM.render(
