@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react'
-import "./component-styles/Post.css";
+import "../component-styles/Post.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUserSharp";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";

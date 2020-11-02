@@ -19,6 +19,8 @@ function Home(){
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item in"><a class="nav-link" href="/Home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="/QandA">Q and A</a></li>
+						<li class="nav-item"><a class="nav-link" href="/issues">Collage Issues</a></li>
 						<li class="nav-item"><a class="nav-link" href="/About" >About</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Contact">Contacts</a></li>
 					</ul>
