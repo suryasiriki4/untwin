@@ -1,9 +1,20 @@
 .sidebar {
     border-right: 1px solid var(--untwin-background);
-    flex: 1;
-}       
-
-.sidebar__doubt {
+    flex: 0.3;
+    /* min-width: 250px; */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .sidebar__doubtIcon {
+    color: var(--untwin-color);
+    font-size: 30px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar__doubt {
     background-color: var(--untwin-color) !important;
     border: none !important;
     color: white !important;
@@ -12,4 +23,4 @@
     border-radius: 30px !important;
     height: 50px !important;
     margin-top: 20px !important;
-}
+  }

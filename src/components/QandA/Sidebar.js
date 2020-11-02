@@ -1,5 +1,5 @@
 import React from 'react';
-import SidebarOption from "./SidebarOption"
+import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from "@material-ui/icons/NotificationsNone";
@@ -16,9 +16,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <Logo/>
-            <SidebarOption active text = "Home" Icon={HomeIcon}/>
-            <SidebarOption text = "Explore" Icon={SearchIcon}/>
-            <SidebarOption text = "Notifications" Icon={NotificationsIcon}/>
+            <SidebarOption Icon={HomeIcon} active text="Home"/>
+            <SidebarOption Icon={SearchIcon} text="Explore"/>
+            <SidebarOption Icon={NotificationsIcon} text="Notifications" />
             <SidebarOption Icon={MailOutlineIcon} text="Messages" />
             <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
             <SidebarOption Icon={ListAltIcon} text="Lists" />
