@@ -1,7 +1,6 @@
 import { Avatar,Button } from '@material-ui/core';
 
 import React, {useState} from 'react';
-import "./component-styles/Post.css";
 
 import "../component-styles/Post.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUserSharp";
@@ -49,7 +48,7 @@ function Post({
 
                     <Button onClick={handleClick("https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg")}> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
 
-                    <ChatBubbleOutlineIcon fontSize="small" />
+                    {/* <ChatBubbleOutlineIcon fontSize="small" /> */}
 
                     <RepeatIcon fontSize="small" />
                     <FavoriteBorderIcon fontSize="small" />
