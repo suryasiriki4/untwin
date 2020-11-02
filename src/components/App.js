@@ -12,6 +12,7 @@ import Issues from "./issues/Issues"
 
 function App() {
   return (
+    
     <BrowserRouter>
       <div>
       <Route exact path="/">
