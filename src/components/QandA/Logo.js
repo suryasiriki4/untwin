@@ -6,7 +6,7 @@ function Logo(){
     return (
         <div className='div_logo'>
             <UntiwnIcon className="untwinIcon"/>    
-            <h1 className="logo"> UNTWIN </h1>
+            <h1 className="logo"> UnTwine </h1>
         </div>
     );
 }
