@@ -52,6 +52,12 @@
     margin: 5% 3% 5% 0;
 }
 
+.title-img {
+    width: 110%;
+    position: absolute;
+    right: 0%;
+}
+
 @media (max-width: 1119px) {
     #title {
         text-align: center;
@@ -61,12 +67,6 @@
         position: static;
         transform: rotate(0);
     }
-}
-
-.title-img {
-    width: 110%;
-    position: absolute;
-    right: 0%;
 }
 
 .doubt-img {
