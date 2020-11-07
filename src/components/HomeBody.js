@@ -10,7 +10,7 @@ import issues from "./images/issues.jpg"
 function HomeBody() {
     return (
         <div id="HomeBody">
-            <div id="HomeTitle" className="container-fluid headercont">
+            <div id="HomeTitle" className="headercont">
                 <div className="row">
                     <div className="col-lg-6">
                         <h1 id="head1">Have a question?</h1>
