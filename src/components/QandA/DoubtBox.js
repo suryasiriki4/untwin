@@ -1,6 +1,5 @@
 import React from 'react'
 import "../component-styles/DoubtBox.css";
-import { Avatar, Button } from "@material-ui/core";
 import { PostDoubt } from '../../services/postingservices';
 
 
@@ -12,7 +11,7 @@ class DoubtBox extends React.Component{
         this.state = {
             title:'',
             description:'',
-            image:''
+            image:null
         }
     }
 
@@ -30,13 +29,14 @@ class DoubtBox extends React.Component{
 
     handleImage = (e) => {
         this.setState({
-            image:e.target.value,
+            image:e.target.files[0],
         })
     }
 
     handleSubmit = async (e) =>{
         e.preventDefault();
-        const status = await PostDoubt(data);
+        const status = await PostDoubt(this.state);
+        console.log(status);
     }
 
     render(){
