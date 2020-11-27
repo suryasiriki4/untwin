@@ -1,22 +1,57 @@
 import React from 'react'
 import "../component-styles/DoubtBox.css";
 import { Avatar, Button } from "@material-ui/core";
+import { PostDoubt } from '../../services/postingservices';
 
 
-function DoubtBox() {
-    return (
-        <div className="doubtBox">
-            <form action="">
-                <div className="doubtBox__input">
-                    <Avatar src="https://minervaschools-production-cms-uploads.s3.amazonaws.com/images/20150916_MNRV_220.2e16d0ba.fill-724x452.jpg?could_not_match_s3_bucket_and_object" />
-                    <input placeholder="What's your Doubt ?" />
-                </div>
-                <Button className="doubtBox__doubtButton">
-                    Doubt
-                </Button>
-            </form>
-        </div>
-    );
+class DoubtBox extends React.Component{
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            title:'',
+            description:'',
+            image:''
+        }
+    }
+
+    handleTitle = (e) => {
+        this.setState({
+            title:e.target.value,
+        })
+    }
+
+    handleDesc = (e) => {
+        this.setState({
+            description:e.target.value,
+        })
+    }
+
+    handleImage = (e) => {
+        this.setState({
+            image:e.target.value,
+        })
+    }
+
+    handleSubmit = async (e) =>{
+        e.preventDefault();
+        const status = await PostDoubt(data);
+    }
+
+    render(){
+        return(
+            <div className="doubtBox">
+                <form onSubmit={this.handleSubmit}>
+                   <input type='text' onChange={this.handleTitle}/>
+                   <textarea onChange={this.handleDesc}/>
+                   <input type='file' onChange={this.handleImage}/>
+                   <input type="submit" value="Submit" />
+                </form>
+            </div>
+        );
+    }
+
 }
 
 export default DoubtBox;
