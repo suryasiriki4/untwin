@@ -8,6 +8,7 @@ import Login from "../auth/Login"
 import Register from "../auth/Register"
 import QandA from "./QandA/QandA"
 import Issues from "./issues/Issues"
+import CommentPage from "./QandA/Comments/CommentPage"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path="/Contact" component={Contact}/>
       <Route path="/Login" component={Login}/>
       <Route path="/Register" component={Register}/>
+      <Route path="/Comments" component={CommentPage}/>
     </div>
     </BrowserRouter>
   );
