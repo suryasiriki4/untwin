@@ -8,6 +8,7 @@ import Login from "../auth/Login"
 import Register from "../auth/Register"
 import QandA from "./QandA/QandA"
 import Issues from "./issues/Issues"
+import DoubtBox from "./QandA/DoubtBox"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </Route>
       <Route path="/Home" component={Home}/>
       <Route path="/QandA" component={QandA} />
+      <Route path="/QandA/post" component={DoubtBox}/>
       <Route path="/issues" component={Issues} />
       <Route path="/About" component={About}/>
       <Route path="/Contact" component={Contact}/>

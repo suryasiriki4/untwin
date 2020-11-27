@@ -24,14 +24,7 @@ function Sidebar() {
             <SidebarOption Icon={ListAltIcon} text="Lists" />
             <SidebarOption Icon={PermIdentityIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizIcon} text="More" />
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-
-            {/* button -> post a doubt */}
-            <Button variant="outlined" className="sidebar__doubt">Doubt</Button>
+            <a variant="outlined" className="sidebar__doubt" href="/QandA/post">Doubt</a>
 
         </div>
     );
