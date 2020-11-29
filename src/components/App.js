@@ -22,7 +22,7 @@ function App() {
       </Route>
       <Route path="/Home" component={Home}/>
       <Route path="/QandA" component={QandA} />
-      <Route path="/QandA/post" component={DoubtBox}/>
+      <Route path="/post" component={DoubtBox}/>
       <Route path="/issues" component={Issues} />
       <Route path="/About" component={About}/>
       <Route path="/Contact" component={Contact}/>

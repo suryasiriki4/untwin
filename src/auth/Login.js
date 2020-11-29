@@ -8,7 +8,7 @@ class Login extends React.Component{
     super(props)
 
     this.state ={
-      username:'',
+      email:'',
       password:''
     }
 
@@ -32,9 +32,9 @@ class Login extends React.Component{
       email:this.state.email,
       password:this.state.password
     }
-    const status = await UserLogin(data);
-    console.log(status);
-    if(status === 200){
+    const res = await UserLogin(data);
+    console.log(res);
+    if(res.status === 200){
       this.props.history.push('/QandA');
     }
   }
