@@ -8,5 +8,3 @@ export const PostDoubt = async (data) => {
     newdata.append('image',data.image);
     return axios.post(MYURL+'/posts',newdata,{withCredentials:true,headers:{'content-type': 'multipart/form-data'}});
 }
-
- 
