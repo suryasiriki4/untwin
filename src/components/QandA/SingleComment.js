@@ -5,10 +5,6 @@ import Downvote from './Downvote.js';
 import ReplyComment from './ReplyComment';
 
 class SingleComment extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
    /* const [CommentValue, setCommentValue] = useState("")
 
     const handleChange = (e) => {

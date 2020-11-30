@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Input, Avatar} from "@material-ui/core";
+import {Button} from "@material-ui/core";
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 class Upvote extends React.Component {

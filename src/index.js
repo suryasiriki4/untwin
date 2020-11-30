@@ -4,7 +4,6 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import Issues from './components/issues/Issues';
-import CommentList from './components/QandA/CommentList';
 import QandA from './components/QandA/QandA';
 
 
