@@ -1,1 +1,1 @@
-export const MYURL = 'http://localhost:5000/api'
+export const MYURL = 'https://untwin.herokuapp.com/api'
