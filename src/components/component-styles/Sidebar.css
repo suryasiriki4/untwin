@@ -22,5 +22,18 @@
     text-transform: inherit !important;
     border-radius: 30px !important;
     height: 50px !important;
+    width: 100px;
     margin-top: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar__doubtLink {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .sidebar__doubtLink:hover {
+    color:  white !important;
   }
