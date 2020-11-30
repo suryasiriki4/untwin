@@ -7,7 +7,8 @@ import Contact from "./Contact"
 import Login from "../auth/Login"
 import Register from "../auth/Register"
 import QandA from "./QandA/QandA"
-import Issues from "./issues/Issues"
+// import Issues from "./issues/DiscussionThread/DiscussionThread"
+import Issues from "./issues/Issues"; 
 import CommentPage from "./QandA/Comments/CommentPage"
 import DoubtBox from "./QandA/DoubtBox"
 

@@ -1,0 +1,35 @@
+body {
+    align-items: center;
+    text-align: center;
+}
+
+.dicussion-title {
+    text-align: center;
+    padding: 2rem;
+}
+
+.post-editor {
+    margin: 1em 20%;
+}
+
+.post-editor-button {
+    float: right;
+    margin-top: 1em;
+}
+
+.post-body {
+    margin: 1em 20%;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media(max-width: 900px) {
+    .post-editor {
+        margin: 1em;
+    }
+
+    .post-body {
+        margin: 1em;
+    }
+}
