@@ -2,7 +2,7 @@ import React from "react";
 import "./Input.css";
 
 const Input = ({ message, setMessage, sendMessage }) => (
-    <div class="input-group mb-3">
+    <div className="input-group mb-3">
         <input
             type="text"
             className="form-control"
@@ -11,7 +11,7 @@ const Input = ({ message, setMessage, sendMessage }) => (
             onChange={(event) => setMessage(event.target.value)}
             onKeyPress={event => event.key === "Enter" ? sendMessage(event) : null}
             aria-describedby="basic-addon2" />
-        <div class="input-group-append">
+        <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="button" onClick={(event) => sendMessage(event)}>send</button>
         </div>
     </div>

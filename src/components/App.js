@@ -29,7 +29,7 @@ function App() {
       <Route path="/Issues" component={Issues} />
       <Route path="/About" component={About}/>
       <Route path="/Join" exact component={Join} />
-      <Route path="/Chat" component={Chat}/>
+      <Route path="/Rooms" component={Chat}/>
       <Route path="/Contact" component={Contact}/>
       <Route path="/Login" component={Login}/>
       <Route path="/Register" component={Register}/>

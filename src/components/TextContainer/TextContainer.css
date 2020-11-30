@@ -1,9 +1,10 @@
-.textContainer {
+  .textContainer {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
     color: white;
     height: 60%;
+    text-align: center;
     justify-content: space-between;
   }
   
@@ -16,6 +17,7 @@
   .activeItem {
     display: flex;
     align-items: center;
+    margin-left: 50px;
   }
   
   .activeContainer img {
@@ -23,7 +25,13 @@
   }
   
   .textContainer h1 {
-    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .usericon {
+    margin-right: 10px;
   }
   
   @media (min-width: 320px) and (max-width: 1200px) {
