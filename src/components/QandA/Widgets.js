@@ -12,7 +12,7 @@ function Widgets() {
             </div>
             
             <div className="title__of__courses">
-                <h3>What are the subjects?</h3>
+                <h3>Popular StudyRooms</h3>
             </div>            
 
             <div className="all_courses">
