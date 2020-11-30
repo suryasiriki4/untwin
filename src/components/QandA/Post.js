@@ -43,7 +43,7 @@ function Post({
                         <h3>{question}</h3>
                     </div>
                 </div>
-                <img src={"data:image/" + img.data.contentType + ";base64," + btoa(img.data.data.toString('base64'))} alt=""/>
+                <img src={`data:image/png;base64,${Buffer.from(img.data.data).toString('base64')}`} alt="a"/>
 
                 {/* <img>
                     {img.data}
