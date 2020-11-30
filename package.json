@@ -10,12 +10,9 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
     "js-cookie": "^2.2.1",
-<<<<<<< HEAD
     "mongodb": "^3.6.3",
-=======
     "query-string": "^6.13.7",
     "random-emoji": "^1.0.2",
->>>>>>> b28f392e3753677430c2c8f682c3449ca38d0cd2
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-emoji": "^0.5.0",
