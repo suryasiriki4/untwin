@@ -11,6 +11,9 @@ import Issues from "./issues/Issues"
 import CommentPage from "./QandA/Comments/CommentPage"
 import DoubtBox from "./QandA/DoubtBox"
 
+import Join from "./Join/Join";
+import Chat from "./Chat/Chat";
+
 
 function App() {
   return (
@@ -22,9 +25,11 @@ function App() {
       </Route>
       <Route path="/Home" component={Home}/>
       <Route path="/QandA" component={QandA} />
-      <Route path="/post" component={DoubtBox}/>
-      <Route path="/issues" component={Issues} />
+      <Route path="/Post" component={DoubtBox}/>
+      <Route path="/Issues" component={Issues} />
       <Route path="/About" component={About}/>
+      <Route path="/Join" exact component={Join} />
+      <Route path="/Chat" component={Chat}/>
       <Route path="/Contact" component={Contact}/>
       <Route path="/Login" component={Login}/>
       <Route path="/Register" component={Register}/>

@@ -14,7 +14,7 @@ function Header() {
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="/Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/QandA">Q/A</a></li>
-						<li class="nav-item"><a class="nav-link" href="/issues">Issues</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Join">StudyRooms</a></li>
                         <li class="nav-item"><a class="nav-link" href="/About" >About</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Contact">Contacts</a></li>
                     </ul>
