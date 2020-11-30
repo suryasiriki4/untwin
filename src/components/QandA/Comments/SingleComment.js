@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import {Avatar, Button} from '@material-ui/core';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import Upvote from './Upvote.js';
+import Downvote from './Downvote.js';
 import ReplyComment from './ReplyComment';
 
-function SingleComment(props) {
+class SingleComment extends React.Component {
    /* const [CommentValue, setCommentValue] = useState("")
 
     const handleChange = (e) => {
@@ -31,25 +31,27 @@ function SingleComment(props) {
           })
        
     } */
+    render() {
     return (
         <div>
-            <div style={{float: 'left'}}>
+            {/* <div style={{float: 'left'}}>
                 <Avatar src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Letter_u.svg/490px-Letter_u.svg.png" />
-            </div> 
+            </div>  */}
             <div style={{margin: '16px'}}>
-                <h5> User1 </h5>  
-                <p>{props.content}</p>
+            <h3 style={{fontSize:'15px'}}> User1 </h3>
+            <p>{this.props.content}</p>
             </div>
             <div>
-                <Button style={{float:'left', height:'30px', margin: '4px'}}><KeyboardArrowUpIcon fontSize="small"/></Button>
-                <Button style={{float:'left', height:'30px', margin: '4px'}}><KeyboardArrowDownIcon fontSize="small"/></Button>
-                <Button style={{height:'30px', margin: '4px'}}>Reply To</Button>
+                <Upvote/>
+                <Downvote/>
+                <Button style={{height:'30px', margin: '4px', backgroundColor: '#33aaa3'}}>Reply To</Button>
             </div> 
             <div style={{marginLeft:'50px', width:'80%'}}>
                 <ReplyComment content={"This is a reply"}/>
             </div>
         </div>
     )
+    }
 }
 
 export default SingleComment

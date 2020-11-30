@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "js-cookie": "^2.2.1",
+    "mongodb": "^3.6.3",
     "popper.js": "^1.16.1",
     "query-string": "^6.13.7",
     "random-emoji": "^1.0.2",

@@ -6,7 +6,7 @@ import SendIcon from '@material-ui/icons/Send';
 import ImageIcon from '@material-ui/icons/Image';
 import "../../component-styles/Post.css";
 
-function CommentList() {
+class CommentList extends React.Component {
    /* const [Comment, setComment] = useState("");
 
     const handleChange = (e) => {
@@ -24,11 +24,16 @@ function CommentList() {
 
     } */
 
+    handleSubmit() {
+
+    }
+
+    render() {
     return (
         <div style={{margin: '16px'}}>
-            <div className="post__avatar" style={{margin: '16px'}}>
+            {/* <div className="post__avatar" style={{margin: '16px'}}>
                 <Avatar style={{float: 'left'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Letter_u.svg/490px-Letter_u.svg.png" />
-            </div> 
+            </div>  */}
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
@@ -44,19 +49,22 @@ function CommentList() {
                 </div>
            <img src={"https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg"} alt=""/>
            </div>
-             <h3> Replies </h3>
+             <h3 style={{fontSize:'25px', color: '#33aaa3'}}> Replies </h3>
              <SingleComment content={"This is a comment"} />
              <SingleComment content={"This is also another comment"} />
-             <form style={{display:"flex"}} onSubmit>
+             <form style={{display:"flex"}} onSubmit={this.handleSubmit}>
                 <Input 
                 style={{width: '100%', borderRadius: '5px'}}
-                placeholder={"Hey"} />
+                placeholder={"Write a comment..."} 
+                type='text'
+                id='com'/>
                 <br />
-                <Button style={{float: 'left', height:'52px'}} onClick><SendIcon fontsize="small"/></Button>
-                <Button style={{float: 'left', height:'52px'}}><ImageIcon fontSize="small"/></Button>
+                <Button style={{float: 'left', height:'52px', backgroundColor: "#33aaa3", margin: '4px'}} onClick><SendIcon fontsize="small"/></Button>
+                <Button style={{float: 'left', height:'52px',  backgroundColor: "#33aaa3", margin: '4px'}}><ImageIcon fontSize="small"/></Button>
             </form> 
          </div>
     )
+    }
 }
 
 export default CommentList;
