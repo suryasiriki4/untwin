@@ -1,6 +1,7 @@
 import { Avatar,Button } from '@material-ui/core';
 
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 import "../component-styles/Post.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUserSharp";
@@ -9,21 +10,20 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 
-import CommentPage from './CommentPage';
+import CommentPage from './Comments/CommentPage';
 
 
 function Post({
-    displayName,
-    userName,
-    verified,
-    text,
-    image,
-    avatar,
+    name,
+    question,
+    img
+    // displayName,
+    // userName,
+    // verified,
+    // text,
+    // image,
+    // avatar,
 }) {
-
-    const handleClick = (link) => {
-        <CommentPage link={link} postName={displayName}/>
-    }
 
     return (
         <div className="post">
@@ -34,19 +34,26 @@ function Post({
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Sam Curran <span>
+                            {name} <span>
                                 <VerifiedUserIcon className="post__badge" />
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>Please help with this doubt, highly appreciated??</p>
+                        <h3>{question}</h3>
                     </div>
                 </div>
-                <img src="https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg" alt=""/>
+                <img src={`data:image/png;base64,${Buffer.from(img.data.data).toString('base64')}`} alt="a"/>
+
+                {/* <img>
+                    {img.data}
+                </img> */}
+                
                 <div className="post__footer">
 
-                    <Button onClick={handleClick("https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg")}> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
+                    <Link to="/Comments">
+                        <Button> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
+                    </Link>                    
 
                     {/* <ChatBubbleOutlineIcon fontSize="small" /> */}
 

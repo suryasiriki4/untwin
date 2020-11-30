@@ -24,7 +24,12 @@ function Sidebar() {
             <SidebarOption Icon={ListAltIcon} text="Lists" />
             <SidebarOption Icon={PermIdentityIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizIcon} text="More" />
-            <a variant="outlined" className="sidebar__doubt" href="/post">Doubt</a>
+            <div className="sidebar__doubt">
+                <a  className="sidebar__doubtLink"
+                    variant="outlined"  
+                    href="/post"
+                    >Doubt</a>
+            </div>
 
         </div>
     );

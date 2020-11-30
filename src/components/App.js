@@ -8,7 +8,11 @@ import Login from "../auth/Login"
 import Register from "../auth/Register"
 import QandA from "./QandA/QandA"
 import Issues from "./issues/Issues"
+import CommentPage from "./QandA/Comments/CommentPage"
 import DoubtBox from "./QandA/DoubtBox"
+
+import Join from "./Join/Join";
+import Chat from "./Chat/Chat";
 
 
 function App() {
@@ -21,12 +25,15 @@ function App() {
       </Route>
       <Route path="/Home" component={Home}/>
       <Route path="/QandA" component={QandA} />
-      <Route path="/post" component={DoubtBox}/>
-      <Route path="/issues" component={Issues} />
+      <Route path="/Post" component={DoubtBox}/>
+      <Route path="/Issues" component={Issues} />
       <Route path="/About" component={About}/>
+      <Route path="/Join" exact component={Join} />
+      <Route path="/Rooms" component={Chat}/>
       <Route path="/Contact" component={Contact}/>
       <Route path="/Login" component={Login}/>
       <Route path="/Register" component={Register}/>
+      <Route path="/Comments" component={CommentPage}/>
     </div>
     </BrowserRouter>
   );

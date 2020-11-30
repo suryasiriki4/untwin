@@ -4,7 +4,7 @@ import VerifiedUserIcon from "@material-ui/icons/VerifiedUserSharp";
 import SingleComment from './SingleComment';
 import SendIcon from '@material-ui/icons/Send';
 import ImageIcon from '@material-ui/icons/Image';
-import "../component-styles/Post.css";
+import "../../component-styles/Post.css";
 
 class CommentList extends React.Component {
    /* const [Comment, setComment] = useState("");

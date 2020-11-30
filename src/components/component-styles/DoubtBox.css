@@ -34,3 +34,9 @@
     margin-top: 20px !important;
     margin-left: auto !important;
   }
+
+.post__image_upload_input {
+    color: var(--untwin-color);
+    padding: 2rem;
+}
+
