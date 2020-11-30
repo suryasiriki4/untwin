@@ -33,7 +33,8 @@ h1 {
 }
 
 .home__button__container {
-    align-items: left !important;
+    text-align: left;
+    padding-left: 1rem;
 }
 
 
@@ -42,9 +43,9 @@ h1 {
     border-width: 1px !important;
     border-color: #33AAA3 !important;
     color: var(--untwin-color) !important;
-    font-weight: 900 !important;
+    font-weight: 500 !important;
     text-transform: inherit !important;
-    height: 50px !important;
+    height: 30px !important;
     margin-top: 20px !important;
   
   }
@@ -53,3 +54,38 @@ h1 {
     color: white !important;
     background-color: var(--untwin-color) !important;
   }
+
+
+
+  /* Issue-editor */
+
+body {
+    align-items: center;
+    text-align: center;
+}
+
+.post-editor {
+    margin: 1em 20%;
+}
+
+.post-editor-button {
+    float: right;
+    margin-top: 1em;
+}
+
+.post-body {
+    margin: 1em 20%;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media(max-width: 900px) {
+    .post-editor {
+        margin: 1em;
+    }
+
+    .post-body {
+        margin: 1em;
+    }
+}
