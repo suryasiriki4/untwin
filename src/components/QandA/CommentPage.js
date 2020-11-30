@@ -1,15 +1,25 @@
 import React, {useState} from 'react';
 import CommentList from './CommentList';
 
-function CommentPage() {
-    const [commentList, setcommentList] = useState([])
-    const updateComment = (newComment) => {
-        setcommentList(CommentList.concat(newComment))
+class CommentPage extends React.Component {
+    constructor(props) {
+        this.state = {
+            commentList: []
+        };
+        this.updateComment = this.updateComment.bind(this);
     }
-    const link="https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg"
-    return (
-        <CommentList />
-    );
+
+    updateComment(newComment) {
+        this.setState({
+            commentList: CommentList.concat(newComment)
+        });
+    }
+
+    render() {
+        return (
+            this.state.commentList
+        );
+    }
 }
 
-export default CommentPage
+export default CommentPage;
