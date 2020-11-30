@@ -1,3 +1,7 @@
+.feedheading {
+    color: black;
+}
+
 .feed {
     flex: 3;
     border-right: 1px solid var(--untwin-background);
