@@ -14,17 +14,16 @@ import CommentPage from './Comments/CommentPage';
 
 
 function Post({
-    displayName,
-    userName,
-    verified,
-    text,
-    image,
-    avatar,
+    name,
+    question,
+    img
+    // displayName,
+    // userName,
+    // verified,
+    // text,
+    // image,
+    // avatar,
 }) {
-
-    const handleClick = (link) => {
-        
-    }
 
     return (
         <div className="post">
@@ -35,16 +34,21 @@ function Post({
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Sam Curran <span>
+                            {name} <span>
                                 <VerifiedUserIcon className="post__badge" />
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>Please help with this doubt, highly appreciated??</p>
+                        <h3>{question}</h3>
                     </div>
                 </div>
-                <img src="https://i.pinimg.com/564x/9e/05/7b/9e057b3a18abcdcaf0e40312335ac694.jpg" alt=""/>
+                <img src={"data:image/" + img.data.contentType + ";base64," + btoa(img.data.data.toString('base64'))} alt=""/>
+
+                {/* <img>
+                    {img.data}
+                </img> */}
+                
                 <div className="post__footer">
 
                     <Link to="/Comments">

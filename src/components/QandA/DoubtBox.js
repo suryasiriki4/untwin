@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import "../component-styles/DoubtBox.css";
 import { PostDoubt } from '../../services/postingservices';
 import { TextField } from "@material-ui/core";
@@ -30,6 +30,7 @@ class DoubtBox extends React.Component{
     }
 
     handleImage = (e) => {
+        console.log(e.target.files[0]);
         this.setState({
             image:e.target.files[0],
         })
@@ -44,7 +45,7 @@ class DoubtBox extends React.Component{
     render(){
         return(
 
-            <div className="doubtBox" style={{padding: "2rem"}}>
+        <div className="doubtBox" style={{padding: "2rem"}}>
             <h1 style={{marginBottom: "2rem"}}>Post Doubt</h1>
 
             <form onSubmit={this.handleSubmit}>
