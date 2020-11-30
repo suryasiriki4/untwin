@@ -7,7 +7,9 @@ function AboutBody(){
     return (
         <div className="container-fluid cont" id="AboutBody">
             <h2 id="head">About</h2>
-            <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices neque ornare aenean euismod elementum nisi. Augue neque gravida in fermentum et sollicitudin ac orci. Phasellus egestas tellus rutrum tellus pellentesque eu. At quis risus sed vulputate odio ut enim blandit. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. At erat pellentesque adipiscing commodo elit at imperdiet. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Enim ut tellus elementum sagittis. Dictum sit amet justo donec enim. Donec ultrices tincidunt arcu non sodales neque. Sed augue lacus viverra vitae congue. Vel risus commodo viverra maecenas. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed elementum tempus egestas sed sed risus. Vulputate mi sit amet mauris. Sit amet consectetur adipiscing elit pellentesque.</p>
+            <p id="para">
+                UnTwine aims at connecting people from wherever they are to help each other with their studies through our doubt posting system and study rooms feature which is unique to our idea. Also, the issues addressing features added to our website becomes a powerful tool connecting an educational community virtually.
+            </p>
         </div>
     );
 }

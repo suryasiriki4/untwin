@@ -44,7 +44,7 @@ class Register extends React.Component{
     }
     const res = await UserRegistration(data);
     if(res.status === 200){
-      this.props.history.push('/QandA')
+      this.props.history.push('/Login')
     }
     localStorage.setItem('userinfo',res)
   }
