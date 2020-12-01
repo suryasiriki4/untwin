@@ -61,6 +61,7 @@ class Issues extends Component {
                                 name="" id="" 
                                 cols="30" 
                                 rows="3"
+                                placeholder='please post your issue here...'
                                 value={this.state.newIssueBody}
                                 onChange={this.handleIssueEditorInputChange}
                                 >

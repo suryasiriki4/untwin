@@ -22,6 +22,9 @@ class DiscussionThread extends Component {
         newState.issues.push(this.state.newIssueBody);
         newState.newIssueBody = '';
         this.setState(newState);
+        this.setState({
+            newIssueBody: '',
+        })
     }
 
     handleIssueEditorInputChange(e) {
@@ -35,9 +38,17 @@ class DiscussionThread extends Component {
         return (
             <div>
 
+                <div className="return-button-div">
+                    <Button variant="outlined" className="return-issues-button" href="/Issues">
+                        Return to Issues
+                    </Button>
+                </div>
+            
+
                 <div className="dicussion-title">
+                    
                     <h2>
-                        Heading of Discussion
+                        {this.props.location.aboutProps.title}
                     </h2>
                 </div>
 
@@ -54,6 +65,8 @@ class DiscussionThread extends Component {
                                     name="" id="" 
                                     cols="30" 
                                     rows="3"
+                                    placeholder="Comments go here..."
+                                    value={this.state.newIssueBody}
                                     onChange={this.handleIssueEditorInputChange}
                                     >
                         </textarea>
