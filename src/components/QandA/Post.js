@@ -43,12 +43,7 @@ function Post({
                         <h3>{question}</h3>
                     </div>
                 </div>
-                <img src={`data:image/png;base64,${Buffer.from(img.data.data).toString('base64')}`} alt="a"/>
-
-                {/* <img>
-                    {img.data}
-                </img> */}
-                
+                <img src={`data:image/png;base64,${Buffer.from(img.data.data).toString('base64')}`} alt="a"/>                
                 <div className="post__footer">
 
                     <Link to="/Comments">

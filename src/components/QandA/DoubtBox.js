@@ -39,34 +39,44 @@ class DoubtBox extends React.Component{
     handleSubmit = async (e) =>{
         e.preventDefault();
         const status = await PostDoubt(this.state);
+        alert("Your question has been successfully posted!!");
         console.log(status);
     }
 
     render(){
         return(
 
-        <div className="doubtBox" style={{padding: "2rem"}}>
-            <h1 style={{marginBottom: "2rem"}}>Post Doubt</h1>
+        <div>
 
-            <form onSubmit={this.handleSubmit}>
-                <TextField label="Question"
-                           required
-                           fullWidth
-                           margin="normal"
-                        //    value={title}
-                           onChange={this.handleTitle}/>
+                <div className="return-button-div">
+                    <Button variant="outlined" className="return-qanda-button" href="/QandA">
+                        Return to Q and A
+                    </Button>
+                </div>
 
-               <textarea className="doubtBox__input"
-                         placeholder="Description"
-                         required
-                        //  value={content}
-                         style={{width: "100%", height: 250}}
-                         onChange={this.handleDesc}>
+            <div className="doubtBox" style={{padding: "2rem"}}>
+                <h1 style={{marginBottom: "2rem"}}>Post Doubt</h1>
 
-               </textarea>
-               <input type='file' onChange={this.handleImage} className="post__image_upload_input"/>
-                <Button className="doubtBox__doubtButton" type="submit" variant="contained" color="primary">Create</Button>
-            </form>
+                <form onSubmit={this.handleSubmit}>
+                    <TextField label="Question"
+                            required
+                            fullWidth
+                            margin="normal"
+                            //    value={title}
+                            onChange={this.handleTitle}/>
+
+                <textarea className="doubtBox__input"
+                            placeholder="Description"
+                            required
+                            //  value={content}
+                            style={{width: "100%", height: 250}}
+                            onChange={this.handleDesc}>
+
+                </textarea>
+                <input type='file' onChange={this.handleImage} className="post__image_upload_input"/>
+                    <Button className="doubtBox__doubtButton" type="submit" variant="contained" color="primary">Create</Button>
+                </form>
+            </div>
         </div>
 
             /* <div className="doubtBox">
