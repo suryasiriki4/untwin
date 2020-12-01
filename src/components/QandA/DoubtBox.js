@@ -38,8 +38,10 @@ class DoubtBox extends React.Component{
 
     handleSubmit = async (e) =>{
         e.preventDefault();
-        const status = await PostDoubt(this.state);
-        console.log(status);
+        const res = await PostDoubt(this.state);
+        if(res.status === 200){
+            this.props.history.push('/QandA');
+        }
     }
 
     render(){

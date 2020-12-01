@@ -1,5 +1,6 @@
 import axios from 'axios';
+import { MYURL } from '../CONSTANTS';
 
 export const UserLogin = data => {
-    return axios.post('https://untwin.herokuapp.com/api/login', data,{withCredentials:true});
+    return axios.post( MYURL +'/login', data);
 };

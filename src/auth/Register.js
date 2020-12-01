@@ -12,8 +12,6 @@ class Register extends React.Component{
       username: '',
       password: '',
       email:'',
-      error: false,
-      loginSuccess: false,
     };
   }
 
@@ -46,7 +44,6 @@ class Register extends React.Component{
     if(res.status === 200){
       this.props.history.push('/Login')
     }
-    localStorage.setItem('userinfo',res)
   }
 
   render() {

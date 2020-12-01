@@ -6,6 +6,6 @@ export const PostDoubt = async (data) => {
     newdata.append('title',data.title);
     newdata.append('description',data.description);
     newdata.append('image',data.image);
-    console.log(data.image);
-    return axios.post(MYURL+'/posts', newdata, {withCredentials:true, headers:{'content-type': 'multipart/form-data'}});
+    const auth_token =  localStorage.getItem("auth_token");
+    return axios.post(MYURL+'/posts', newdata, {headers:{'content-type': 'multipart/form-data',"x-auth-token": auth_token}});
 }
