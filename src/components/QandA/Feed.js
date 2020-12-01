@@ -21,10 +21,9 @@ class Feed extends Component {
         this.fetchPosts();
     }
 
-    async fetchPosts() {
+    fetchPosts() {
 
         axios.get(MYURL+ '/posts')
-            .then(response => response)
             .then(json => this.setState({
                 posts: json.data.posts,
                 isLoading: false,

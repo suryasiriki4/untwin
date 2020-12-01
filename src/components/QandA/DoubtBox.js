@@ -41,6 +41,7 @@ class DoubtBox extends React.Component{
         const res = await PostDoubt(this.state);
         if(res.status === 200){
             this.props.history.push('/QandA');
+            alert('your question is successfully posted!');
         }
     }
 
