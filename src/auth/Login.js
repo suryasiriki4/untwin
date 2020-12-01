@@ -34,6 +34,8 @@ class Login extends React.Component{
     }
     const res = await UserLogin(data);
     console.log(res);
+    const auth_token = res.data.auth_token;
+    localStorage.setItem("auth_token",auth_token);
     if(res.status === 200){
       this.props.history.push('/QandA');
     }
