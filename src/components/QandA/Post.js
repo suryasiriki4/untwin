@@ -16,7 +16,8 @@ import CommentPage from './Comments/CommentPage';
 function Post({
     name,
     question,
-    img
+    img,
+    key
     // displayName,
     // userName,
     // verified,
@@ -51,7 +52,10 @@ function Post({
                 
                 <div className="post__footer">
 
-                    <Link to="/Comments">
+                    <Link to={{
+                        pathname:'/Comments',
+                        commentid:key
+                    }}>
                         <Button> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
                     </Link>                    
 

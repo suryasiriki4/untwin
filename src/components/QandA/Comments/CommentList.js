@@ -11,7 +11,7 @@ class CommentList extends React.Component {
 
     const handleChange = (e) => {
         setComment(e.currentTarget.value);
-    }
+    }   
 
     const onSubmit = (e) =>{
         e.preventDefault();
