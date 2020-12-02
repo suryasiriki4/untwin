@@ -15,6 +15,11 @@ const Join = () => {
                 <Link onClick={event => (!name || !room) ? event.preventDefault() : null} to={`/Rooms?name=${name}&room=${room}`}>
                     <button className="formbutton" type="submit">Create |  Join</button>
                 </Link>
+                <div className="instpara">
+                    <p>
+                        Share the room name to invite your friends
+                    </p>
+                </div>
             </form>
             <Footer/>
         </div>

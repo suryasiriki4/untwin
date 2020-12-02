@@ -9,11 +9,15 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
     "js-cookie": "^2.2.1",
     "mongodb": "^3.6.3",
+    "popper.js": "^1.16.1",
     "query-string": "^6.13.7",
     "random-emoji": "^1.0.2",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-emoji": "^0.5.0",
     "react-router": "^5.2.0",
@@ -29,7 +33,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000/",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,5 +1,6 @@
 import axios from 'axios';
+import { MYURL } from '../CONSTANTS';
 
 export const UserLogin = data => {
-    return axios.post('http://localhost:5000/api/login', data,{withCredentials:true});
+    return axios.post( MYURL +'/login', data);
 };

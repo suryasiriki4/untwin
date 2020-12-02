@@ -1,5 +1,6 @@
 import axios from 'axios';
+import { MYURL } from '../CONSTANTS';
 
 export const UserRegistration = data => {
-    return axios.post('http://localhost:5000/api/register', data,{withCredentials:true});
+    return axios.post( MYURL + '/register', data);
 };

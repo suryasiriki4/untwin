@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import CommentList from './CommentList';
 
 class CommentPage extends React.Component {
+
     constructor(props) {
+        super(props);
         console.log(props.location.key);
+
         this.state = {
-            commentList: []
+            commentList: [],
         };
         this.updateComment = this.updateComment.bind(this);
     }
@@ -22,6 +25,6 @@ class CommentPage extends React.Component {
         );
     };
     
-}
+    }
 
 export default CommentPage;
