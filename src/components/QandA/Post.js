@@ -16,7 +16,8 @@ import CommentPage from './Comments/CommentPage';
 function Post({
     name,
     question,
-    img
+    img,
+    mykey
     // displayName,
     // userName,
     // verified,
@@ -24,7 +25,6 @@ function Post({
     // image,
     // avatar,
 }) {
-
     return (
         <div className="post">
             {/* <div className="post__avatar">
@@ -46,11 +46,14 @@ function Post({
                 <img src={`data:image/png;base64,${Buffer.from(img.data.data).toString('base64')}`} alt="a"/>                
                 <div className="post__footer">
 
-                    <Link to="/Comments">
+                    <Link to={{
+                        pathname:'/Comments',
+                        commentid: mykey
+                    }}>
                         <Button> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
                     </Link>                    
 
-                    {/* <ChatBubbleOutlineIcon fontSize="small" /> */}
+                    {/* <ChatBubbl myeOutlineIcon fontSize="small" /> */}
 
                     <RepeatIcon fontSize="small" />
                     <FavoriteBorderIcon fontSize="small" />
