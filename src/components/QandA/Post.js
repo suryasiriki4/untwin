@@ -17,7 +17,7 @@ function Post({
     name,
     question,
     img,
-    key
+    mykey
     // displayName,
     // userName,
     // verified,
@@ -25,7 +25,6 @@ function Post({
     // image,
     // avatar,
 }) {
-
     return (
         <div className="post">
             {/* <div className="post__avatar">
@@ -49,12 +48,12 @@ function Post({
 
                     <Link to={{
                         pathname:'/Comments',
-                        commentid:key
+                        commentid: mykey
                     }}>
                         <Button> <ChatBubbleOutlineIcon fontSize="small" /> </Button>
                     </Link>                    
 
-                    {/* <ChatBubbleOutlineIcon fontSize="small" /> */}
+                    {/* <ChatBubbl myeOutlineIcon fontSize="small" /> */}
 
                     <RepeatIcon fontSize="small" />
                     <FavoriteBorderIcon fontSize="small" />
