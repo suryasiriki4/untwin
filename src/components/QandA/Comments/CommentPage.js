@@ -1,29 +1,39 @@
 import React, {useState} from 'react';
 import CommentList from './CommentList';
+import axios from 'axios';
+import { MYURL } from '../../../CONSTANTS';
+
 
 class CommentPage extends React.Component {
-
     constructor(props) {
-        
         super(props);
+        this.loc = props.location.commentid;
 
         this.state = {
-            commentList: [],
+            post: null,
         };
-        this.updateComment = this.updateComment.bind(this);
+       
+        this.fetchPosts = this.fetchPosts.bind(this);
     }
 
-    updateComment(newComment) {
+    async fetchPosts() {
+        const response = await axios.get(MYURL+ '/posts/'+this.loc)
         this.setState({
-            commentList: CommentList.concat(newComment)
-        });
+            post: response.data.post
+        })
+    }
+
+    componentDidMount() {
+        this.fetchPosts();
     }
 
     render() {
+        console.log(this.state.post)
         return (
-            this.state.commentList
+            (this.state.post===null) ? <p>Loading...</p> : <CommentList post={this.state.post}/>
         );
+    };
+    
     }
-}
 
 export default CommentPage;

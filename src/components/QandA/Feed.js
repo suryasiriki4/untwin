@@ -51,7 +51,7 @@ class Feed extends Component {
                             // <li key={post._id}>
                             //     <h1>{post.title}</h1>
                             // </li>
-                            <Post name={post.author.name} question={post.title} img={post.image} key={post._id}/>
+                            <Post name={post.author.name} question={post.title} img={post.image} mykey={post._id} key={post._id}/>
                         )
                     }
                 </ul>
